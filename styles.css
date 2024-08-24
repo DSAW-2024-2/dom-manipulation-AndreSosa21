@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(215, 246, 246);
+    
+    
+}
+.big_container
+    {
+        background-color: white;
+        width: 45%;
+        height: 50%;
+        border-radius: 50px;
+        border: 5px solid rgb(247, 234, 234);
+        box-shadow: 5px 5px 20px;
+        padding: 15px;
+        
+    }
+.image_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+    
+    
+}
+.size_images{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: opacity 0.6s;
+}
+.button_container{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    
+    
+}
+#right_button{
+    position: absolute;
+    right: 15%;                 /* left and right  go to the extreme of the viewport*/
+    background-image: url(rightArrow.png);
+    background-size: cover;     /* re-size the image in the button.*/
+    box-shadow: 3px 3px 3px;
+    
+}
+#left_button{
+    position: absolute;
+    left: 15%;
+    background-image: url(leftArrow.png);
+    background-size: cover;
+    box-shadow: 3px 3px 3px;
+    
+}
+.transition{
+    opacity: 0;
+}
+@media screen and (max-width:1200px) {
+    .big_container{
+    
+        height: 75%;
+        width: 90%;
+        
+    }
+    .image_container{
+        margin-top:10%;
+
+    }
+    .size_images{
+        width: 100%;
+        height: 70%;
+    }
+    #left_button{
+        position: absolute;
+        top:20%;
+        left: 30%;
+    }
+    #right_button{
+        position: absolute;
+        top:20%;
+        right: 30%;
+    }
+    .button_container{
+        height: 70px;
+        width: 70px;
+    }    
+
+}
+@media screen and (max-width:480px){
+    .big_container{
+    
+        height: 60%;
+        width: 90%;
+        
+    }
+    .size_images{
+        width: 100%;
+        height: 65%;
+    }
+
+}
+@media screen and (max-height:440px){
+    .big_container{
+    
+        height: 80%;
+        width:70%;
+        
+    }
+    #left_button{
+        position: absolute;
+        left: 5%;
+    }
+    #right_button{
+        position: absolute;
+        right: 5%;
+    }
+    .size_images{
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .image_container{
+        margin: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
